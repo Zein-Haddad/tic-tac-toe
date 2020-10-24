@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
+
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container flex-column">
+      <div class="row">
+        <h3 class="heading">Tic Tac Toe</h3>
+      </div>
+
+      <div class="row flex-space">
+        <!-- Player 1 and 2 score -->
+        <div class="score player1">
+          <div class="score-text">X Player 1 - 0 points</div>
+        </div>
+        <div class="score player2">
+          <div class="score-text">O Player 2 - 0 points</div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- Tic Tac Toe Board -->
+        <div class="flex-column">
+          <div class="row row-grid">
+            <div class="board-box"></div>
+            <div class="board-box"></div>
+            <div class="board-box"></div>
+          </div>
+          <div class="row row-grid">
+            <div class="board-box"></div>
+            <div class="board-box"></div>
+            <div class="board-box"></div>
+          </div>
+          <div class="row row-grid">
+            <div class="board-box"></div>
+            <div class="board-box"></div>
+            <div class="board-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row flex-space">
+        <!-- Button to reset game -->
+        <button class="btn">Reset</button>
+        <button class="btn">Next Round</button>
+      </div>
+    </div>
+
+  </body>
+</html>
