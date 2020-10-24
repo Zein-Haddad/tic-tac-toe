@@ -3,6 +3,7 @@ body {
   padding: 0;
   color: #E7EBC5;
   background-color: #0D1321;
+  user-select: none;
 }
 
 .container {
@@ -29,7 +30,11 @@ body {
 }
 
 .flex-space {
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.flex-center {
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -43,12 +48,56 @@ body {
   font-size: 1.7rem;
 }
 
+.score-text {
+  border: 2px solid #CBC5EA;
+  color: #CBC5EA;
+  padding: 0.6rem 1.2rem;
+}
+
+.score-text-active {
+  background-color: #CBC5EA;
+  color: #0D1321;
+  transition: all 0.2s ease;
+}
+
+.score-text-active:hover {
+  transform: translate(0, -2px);
+  box-shadow: 1px 2px 3px 2px #090D17;
+}
+
+.btn {
+  background-color: #0D1321;
+  color: #007EA7;
+  border: 2px solid #007EA7;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  transition: all 0.1s ease-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #007EA7;
+  color: #E7EBC5;
+}
+
+.btn:active {
+  cursor: pointer;
+  background-color: #007EA7;
+  color: #E7EBC5;
+  transform: scale(1.05, 1.05);
+}
+
 .board-box {
   width: 125px;
   height: 125px;
   margin: 0;
   padding: 0;
   border: 2px solid #E7EBC5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
 }
 
 .board-box:hover {
@@ -59,5 +108,9 @@ body {
 @media only screen and (min-width: 768px) {
   .heading {
     font-size: 2rem;
+  }
+
+  .btn {
+    transition: all 0.2s ease-out;
   }
 }
