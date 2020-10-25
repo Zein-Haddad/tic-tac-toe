@@ -4,6 +4,7 @@ body {
   color: #E7EBC5;
   background-color: #0D1321;
   user-select: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -46,6 +47,14 @@ body {
 
 .heading {
   font-size: 1.7rem;
+  margin: 0;
+}
+
+.display-winner {
+  font-size: 1.3rem;
+  height: 1.3rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .score-text {
@@ -73,6 +82,7 @@ body {
   padding: 0.5rem 1rem;
   margin: 0 1rem;
   transition: all 0.1s ease-out;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn:hover {
